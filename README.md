@@ -1,2 +1,2 @@
-# JAVA-STUDY
-java学习过程中的练习和项目
+# JAVA
+java的练习和项目
