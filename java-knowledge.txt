@@ -1,3 +1,18 @@
+一. java 的前备知识总结
+ 1. java 程序设计语言也像 C 、 C++ 等一样，需要 编译 - 运行程序。也就是 从 源码（source code） -> 机器码(object code or machine code)
+    这样一个程序只能在一种平台上成功运行，在其他平台则不能运行成功；即在windows下编译成的机器码 到了 mac 是不能成功运行的。
+    同样的源码在编译后却不能在不同平台运行，这是个十分尴尬的事情，那么如何打破这种僵局呢？
+    
+    J.V.M -- java virtual machine -- 即 java虚拟机
+    Java虚拟机横亘在source code 与 machine code 之间，承担着一个有趣的中间媒介的角色。
+    在java 中，source code 编译后 不会 直接成为 machine code ，而是 通过 java虚拟机 形成 字节码（我们常见的.class文件）
+    而这个字节码，它在不同的平台环境中都能够转化为相应的machine code 进而 实现了 相同的 source code 的 程序 在 不同平台的 成功运行.
+ 2. java 中的 JDK、JRE、JVM  -- 名词的区分
+ JDK -- java developer kit -- java 开发工具箱 （kit -- 工具箱）
+ JRE -- java runtime envoriment -- java 运行环境
+ J.V.M -- java 虚拟机
+ JDK 囊括了 java 开发的 工具 和 环境 ，也就是说，JRE 是 包含在 JDK中的， 而 JVM 是 包含 在 JRE中。
+------------------------------------------------------------------------------------------------------------------
 1. 关键字--keyword -- java中具有特殊含义的字符串.
    例如class、public、int等等, 注意:关键字是小写的.
 2. 标识符--identifier -- java中任何需要命名的字符序列都称为标识符.
