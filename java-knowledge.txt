@@ -4,9 +4,9 @@
     同样的源码在编译后却不能在不同平台运行，这是个十分尴尬的事情，那么如何打破这种僵局呢？
     
     J.V.M -- java virtual machine -- 即 java虚拟机
-    Java虚拟机横亘在source code 与 machine code 之间，承担着一个有趣的中间媒介的角色。
-    在java 中，source code 编译后 不会 直接成为 machine code ，而是 通过 java虚拟机 形成 字节码（我们常见的.class文件）
-    而这个字节码，它在不同的平台环境中都能够转化为相应的machine code 进而 实现了 相同的 source code 的 程序 在 不同平台的 成功运行.
+    
+    在java 中，source code 经过java编译器编译后 不会 成为 machine code, 而是通过java编译器形成 byte code (.class 字节码文件)
+    而这个字节码，它在不同的平台环境中在同一个JVM上运行 进而 实现了 相同的 source code 的 程序 在 不同平台的 成功运行.
  2. java 中的 JDK、JRE、JVM  -- 名词的区分
  JDK -- java developer kit -- java 开发工具箱 （kit -- 工具箱）
  JRE -- java runtime envoriment -- java 运行环境
